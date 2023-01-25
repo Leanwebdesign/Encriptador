@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Frame 6.png" alt="logo de alura">
+    </header>
+    <main>
+
+        <textarea name="text"id="textoEncriptado" class="textoE" cols="50" rows="7" placeholder="Ingrese el texto aqui"></textarea>
+        <div>
+            <h1 class="informacion"> Solo letras minúsculas y sin acentos</h1>
+        </div>
+        <textarea name="resultado" id="textoDesencriptado" class="textoD" cols="30" rows="20" placeholder="Ningún mensaje fue encontrado"></textarea>
+
+        <div class="botones">
+        <button type="button" id="botonEncriptado" class="botonE">Encriptar</button>
+        <button type="button" id="botonDesencriptado" class="botonD">Desencriptar</button>
+        <button type="button" id="botonCopiar" class="botonC">Copiar</button>
+        </div>
+    </main>
+</body>
+    <script>          
+        var btn = document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#botonDesencriptado");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#botonCopiar")
+        btn3.onclick = copiar;
+    </script>
+    <footer>
+        <p class="pie">Sitio web diseñado por <a class="piemail" href="mailto:leanwebdesign@gmail.com">leanwebdesign@gmail.com</a></p>
+        
+    </footer>
+</html>

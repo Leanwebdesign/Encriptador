@@ -1,0 +1,173 @@
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 1px;
+    width: 7%;
+}
+
+main{
+    margin-left: 200px;
+}
+
+.textoE {
+    border: none;
+    color: #0A3871;
+    margin-top: 97px;
+    text-transform: lowercase;
+    resize: none;
+ 
+}
+
+::placeholder {color: #0A3871;}
+.textoE:focus {
+    outline: none;
+
+}
+
+.textoD{
+    background: white;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 810px;
+    margin-top: -600px;
+    position: fixed;
+    text-align: center;
+    padding: 7px;
+    resize: none;
+    box-shadow: 1px 1px 10px;
+}
+
+.textoD:focus {
+    outline: none;
+}
+
+
+
+.botonD {
+    background-color: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 228px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botonD:hover{
+    transform: scale(1.1);
+}
+
+
+.botonE {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 228px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botonE:hover{
+    transform: scale(1.1);
+}
+
+
+.botonC {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 530px;
+    margin-top: -67px;
+    position: absolute;
+    width: 228px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botonC:hover{
+    transform: scale(1.1);
+}
+
+
+#botonCopiar{
+    display: none;
+}
+
+
+.informacion {
+    color: #495057;
+    font-size: 14px;
+    padding-top: 200px;
+}
+
+.informacion:before{
+    content: "!";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pie{
+    color: #495057;
+    font-size: 14px;
+    text-align: end;
+    padding-right: 1.5%;
+    padding-top: 3px;
+
+}
+
+.pie:before{
+    content: "©";
+    font-size: 16px;
+}
+
+.piemail{
+    color: #495057;
+    font-size: 14px;
+    text-align: end;
+    padding-right: 1.5%;
+    padding-top: 3px;
+
+}
+
+
+@media screen and (max-width:480px){
+    
+    .textoE, .textoD, .textoD:focus, .informacion, .informacion:before, .botonE, .botonE:hover, .botonD, .botonD:hover, .botonC, .botonC:hover{
+        width: 100%;
+        position: static;
+        min-height: 250px;
+        margin-bottom: 100%;
+        margin-inline: 100%;
+        margin-left: auto;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .pie, .pie:before, .piemail{
+        width: 100%;
+    }
+
+
+}
